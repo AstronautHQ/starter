@@ -1,0 +1,11 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import config from './_index.config.json';
+
+const astronautConfig: AstronautConfig = config;
+---
+
+<Layout SEO={astronautConfig.SEO}>
+	<Welcome />
+</Layout>

@@ -1,0 +1,8 @@
+{
+    "SEO": {
+        "title": "Astronaut",
+        "description": "Your default description here",
+        "image": "/default-og-image.jpg",
+        "canonicalURL": "https://astro-basics.vercel.app"
+    }
+}
