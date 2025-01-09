@@ -1,0 +1,4 @@
+dependencies: node@22.11.0 pnpm@9.15.3
+
+env:
+  PATH: $PATH:./node_modules/.bin
