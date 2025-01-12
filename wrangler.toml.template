@@ -7,5 +7,7 @@ compatibility_flags = ["nodejs_compat"]
 
 workers_dev = false
 
+assets = { directory = "./dist", binding = "ASSETS" }
+
 [observability]
 enabled = true
