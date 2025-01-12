@@ -6,15 +6,22 @@ import { defineConfig } from 'astro/config';
 
 import partytown from '@astrojs/partytown';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
   devToolbar: {
     enabled: false
   },
+
   integrations: [
     partytown(),
     react(),
     sitemap(),
     tailwind(),
   ],
+
+  adapter: cloudflare({
+    imageService: "passthrough"
+  }),
 })

@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "{{ project_id }}"
+main = "dist/_worker.js/index.js"
+
+compatibility_date = "2025-01-09"
+compatibility_flags = ["nodejs_compat"]
+
+workers_dev = false
+
+[observability]
+enabled = true
