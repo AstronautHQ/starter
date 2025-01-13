@@ -9,9 +9,5 @@ workers_dev = false
 
 assets = { directory = "./dist", binding = "ASSETS" }
 
-routes = [
-  { pattern = "{{ project_id }}.{{ mode }}.{{ domain }}", custom_domain = true }
-]
-
 [observability]
 enabled = true
