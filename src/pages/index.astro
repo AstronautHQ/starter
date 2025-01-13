@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import config from './_index.config.json';
 
@@ -7,5 +6,30 @@ const astronautConfig: AstronautConfig = config;
 ---
 
 <Layout SEO={astronautConfig.SEO}>
-	<Welcome />
+  <main class="min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="relative group">
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
+      <div class="relative max-w-3xl mx-auto space-y-12 text-center bg-white rounded-lg p-8">
+        <h1 class="text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          Welcome to Astronaut
+        </h1>
+        
+        <div class="max-w-2xl">
+          <div class="space-y-8">
+            <h2 class="text-4xl font-semibold text-gray-800">Getting Started</h2>
+            
+            <ul class="space-y-4 text-xl text-gray-700">
+              <li class="flex items-center justify-center space-x-2">
+                <span>🤖</span>
+                <span>Chat with AI to create your own site</span>
+              </li>
+              <li class="flex items-center justify-center space-x-2">
+                <span>💬</span>
+                <span>Use natural language to describe your desired changes</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </main>
 </Layout>
