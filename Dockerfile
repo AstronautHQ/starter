@@ -1,3 +1,3 @@
 FROM scratch
 
-COPY . /usr
+COPY ./dist /usr/dist
