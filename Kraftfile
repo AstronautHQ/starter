@@ -9,4 +9,4 @@ labels:
 
 rootfs: ./Dockerfile
 
-cmd: ["/usr/bin/node", "/usr/dist/_worker.js/index.js"]
+cmd: ["/usr/node_modules/.bin/astro", "dev"]
