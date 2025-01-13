@@ -7,8 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "postinstall": "node -e \"const fs = require('fs'); const path = require('path'); const template = fs.readFileSync('wrangler.toml.template', 'utf8'); const projectName = path.basename(process.cwd()); const config = template.replace('{{ project_id }}', projectName); fs.writeFileSync('wrangler.toml', config); fs.unlinkSync('wrangler.toml.template');\""
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.1.0",
